@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        android:src="@drawable/img"
+        android:alpha="0.4"
+        android:contentDescription=""
+        android:adjustViewBounds="true"
+        android:layout_gravity="bottom"/>
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_tutor_profile_text"
+        android:textSize="22sp"
+        android:minHeight="48dp"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:gravity="center_horizontal"
+        android:layout_marginBottom="20dp" />
+
+    <EditText
+        android:id="@+id/etTutorName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_tutor_profile_name"
+        android:inputType="textPersonName"
+        android:autofillHints="name"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etTutorSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_tutor_profile_subject"
+        android:autofillHints="subject"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etTutorExperience"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_tutor_profile_experience"
+        android:autofillHints="experience"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etTutorLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_tutor_profile_location"
+        android:autofillHints="location"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <EditText
+        android:id="@+id/etTutorFee"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/create_tutor_profile_fee"
+        android:autofillHints="hourly fee"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:padding="10dp" />
+
+    <Button
+        android:id="@+id/btnUploadImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_tutor_profile_upload_pp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+
+    <Button
+        android:id="@+id/btnSaveProfile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/create_tutor_profile_save"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="?attr/colorPrimary"
+        android:textColor="?android:attr/textColorPrimaryInverse" />
+</LinearLayout>
+</ScrollView>
+</FrameLayout>

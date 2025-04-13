@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Background Image with Transparency -->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/img_2"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/register_tutor_img"
+        android:alpha="0.4"/>  <!-- Transparency Effect -->
+
+    <!-- Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Welcome Text -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:text="@string/register_welcome_message"
+            android:textColor="@android:color/black"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <!-- Name Input -->
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/register_name_text"
+            android:inputType="textPersonName"
+            android:autofillHints="name"
+            android:padding="12dp" />
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/register_email_text"
+            android:inputType="textEmailAddress"
+            android:autofillHints="emailAddress"
+            android:padding="12dp" />
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/etPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/register_password_text"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="12dp" />
+
+        <!-- Confirm Password Input -->
+        <EditText
+            android:id="@+id/etConfirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:drawable/editbox_background"
+            android:hint="@string/register_confirm_password_text"
+            android:inputType="textPassword"
+            android:autofillHints="password"
+            android:padding="12dp" />
+
+        <!-- Tutor Question -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/register_tutor_question"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <!-- Yes/No Toggle -->
+
+        <!-- Register Button -->
+
+        <Switch
+            android:id="@+id/switchTutor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:checked="false"
+            android:text="@string/register_tutor_switch" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="?attr/colorPrimary"
+            android:textColor="?android:attr/textColorPrimaryInverse"
+            android:text="@string/register_button_text" />
+
+        <!-- Login Redirect Link -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/register_login_text"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+</RelativeLayout>
