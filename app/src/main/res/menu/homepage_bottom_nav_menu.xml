@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:title="@string/nav_btn_home_txt"
+        android:icon="@drawable/home_button" />
+    <item
+        android:id="@+id/nav_search"
+        android:icon="@drawable/search_button"
+        android:title="@string/nav_btn_search_txt" />
+    <item
+        android:id="@+id/nav_chat"
+        android:title="@string/nav_btn_chat_txt"
+        android:icon="@drawable/chat_button" />
+    <item
+        android:id="@+id/nav_profile"
+        android:title="@string/nav_btn_Profile_txt"
+        android:icon="@drawable/personal_profile_button" />
+</menu>
